@@ -1,0 +1,188 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Portafolio - Diana Cruz Ramírez">
+  <!-- Navbar -->
+  <nav class="w-full fixed top-0 left-0 z-50 bg-white/90 backdrop-blur shadow-md transition-all duration-500">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-purple-700">Diana</h1>
+      <ul class="flex gap-6 text-lg text-gray-800 font-medium">
+        <li><a href="#inicio" class="hover:text-purple-600 transition">Inicio</a></li>
+        <li><a href="#info" class="hover:text-purple-600 transition">Información</a></li>
+        <li><a href="#hobbies" class="hover:text-purple-600 transition">Hobbies</a></li>
+        <li><a href="#educacion" class="hover:text-purple-600 transition">Educación</a></li>
+        <li><a href="#experiencia" class="hover:text-purple-600 transition">Experiencia</a></li>
+        <li><a href="#contacto" class="hover:text-purple-600 transition">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <main class="pt-32 flex flex-col items-center gap-20 text-center px-4 py-20 bg-cover bg-center bg-no-repeat relative"
+        style="background-image: url('/img/fondo2.jpg');">
+    <div class="absolute inset-0 bg-white/60 backdrop-blur-sm z-0"></div>
+
+    <!-- INICIO -->
+    <section id="inicio" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl transition-transform hover:scale-105">
+        <h2 class="ampliable-texto text-5xl font-bold mb-4">¡Hola, soy Diana Cruz!</h2>
+        <p class="text-2xl mb-4">Bienvenida a mi portafolio hecho con Astro y Tailwind CSS ✨</p>
+        <img src="/img/0.1.jpg" alt="Bienvenida" class="ampliable w-full max-w-md rounded-xl shadow-lg mx-auto transition hover:scale-105" />
+      </div>
+    </section>
+
+    <!-- INFORMACIÓN -->
+    <section id="info" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <h2 class="ampliable-texto text-4xl font-bold mb-4">Información Personal</h2>
+        <ul class="text-left text-lg space-y-2">
+          <li><strong>Nombre:</strong> Diana Cruz Ramírez</li>
+          <li><strong>Edad:</strong> 22 años</li>
+          <li><strong>Fecha de nacimiento:</strong> 16 de febrero del 2003</li>
+          <li><strong>Lugar de residencia:</strong> San Francisco Solo</li>
+          <li><strong>Correo:</strong> diana9cruz1@gmail.com</li>
+          <li><strong>Información extra:</strong> Me encantan los amaneceres, el color rosa y tengo una hija llamada Frida Sofía 💕</li>
+        </ul>
+        <img src="/img/2.jpg" alt="Diana Cruz" class="ampliable w-full max-w-md rounded-2xl shadow-lg mx-auto mt-6 transition hover:scale-105" />
+      </div>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <h2 class="ampliable-texto text-4xl font-bold mb-4">Mis Hobbies</h2>
+        <ul class="text-left text-lg mt-6 space-y-2">
+          <li>Jugar fútbol</li>
+          <li>Ver series y escuchar música</li>
+          <li>Admirar la naturaleza y los atardeceres</li>
+          <li>Conocer lugares nuevos</li>
+          <li>Bailar</li>
+        </ul>
+        <img src="/img/3.1.jpg" alt="Hobbies Diana" class="ampliable w-full max-w-md rounded-2xl shadow-lg mx-auto mt-6 transition hover:scale-105" />
+      </div>
+    </section>
+
+    <!-- EDUCACIÓN -->
+    <section id="educacion" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <h2 class="ampliable-texto text-4xl font-bold mb-4">Recorrido Académico</h2>
+        <ul class="text-left text-lg mt-6 space-y-2">
+          <li>Kínder: DIF “Popocatépetl”, CDMX</li>
+          <li>Primaria: “Cuauhtémoc” y “5 de Febrero”</li>
+          <li>Secundaria: ESTIC No.00002</li>
+          <li>Preparatoria: CBT No.1 – Técnico en Administración</li>
+          <li>Universidad: UMB – Ingeniería en Sistemas</li>
+        </ul>
+        <img src="/img/4.jpg" alt="Educación Diana" class="ampliable w-full max-w-md rounded-2xl shadow-lg mx-auto mt-6 transition hover:scale-105" />
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <h2 class="ampliable-texto text-4xl font-bold mb-4">Experiencia Laboral</h2>
+        <ul class="text-left text-lg space-y-2">
+          <li>Mesera</li>
+          <li>Vendedora en mueblería</li>
+          <li>Empleada doméstica</li>
+          <li>Cuidadora de adulto mayor</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <h2 class="ampliable-texto text-4xl font-bold mb-4">Contacto</h2>
+        <ul class="text-left text-lg space-y-2">
+          <li><strong>Correo:</strong> diana9cruz1@gmail.com</li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/5215538840458" class="text-purple-600">+52 5538840458</a></li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/dianacruz2871" class="text-purple-600">@dianacruz2871</a></li>
+          <li><strong>Facebook:</strong> <a href="https://www.facebook.com/DianaCruzRamirez" class="text-purple-600">Diana Cruz Ramírez</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="scroll-fade max-w-3xl z-10 text-black transition-all duration-700 opacity-0 translate-y-10">
+      <div class="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-xl hover:scale-105 transition-transform">
+        <div class="flex justify-center gap-4 mb-6">
+          <button id="mostrar" class="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition">Ver imágenes</button>
+          <button id="ocultar" class="bg-gray-400 hover:bg-gray-500 text-white font-semibold py-2 px-4 rounded-xl shadow-md transition hidden">Ocultar imágenes</button>
+        </div>
+        <div id="imagenes" class="hidden">
+          <img src="/img/9.jpg" alt="Galería 1" class="ampliable w-full max-w-md rounded-2xl shadow-lg mx-auto mb-6 transition hover:scale-105" />
+          <img src="/img/10.jpg" alt="Galería 2" class="ampliable w-full max-w-md rounded-2xl shadow-lg mx-auto mb-6 transition hover:scale-105" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal Imagen Zoom -->
+  <div id="zoom-modal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-[100] hidden">
+    <img id="zoom-img" src="" alt="Imagen ampliada" class="max-w-4xl max-h-[90vh] rounded-xl shadow-2xl cursor-pointer transition-transform duration-300" />
+  </div>
+
+  <!-- Script -->
+  <script is:inline>
+    // Efecto de entrada scroll
+    const observador = new IntersectionObserver((entradas) => {
+      entradas.forEach(entrada => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.remove('opacity-0', 'translate-y-10');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.scroll-fade').forEach(el => observador.observe(el));
+
+    // Galería toggle
+    const btnMostrar = document.getElementById('mostrar');
+    const btnOcultar = document.getElementById('ocultar');
+    const contenedor = document.getElementById('imagenes');
+
+    btnMostrar?.addEventListener('click', () => {
+      contenedor.classList.remove('hidden');
+      btnMostrar.classList.add('hidden');
+      btnOcultar.classList.remove('hidden');
+      contenedor.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    btnOcultar?.addEventListener('click', () => {
+      contenedor.classList.add('hidden');
+      btnMostrar.classList.remove('hidden');
+      btnOcultar.classList.add('hidden');
+    });
+
+    // Zoom imagen
+    const modal = document.getElementById('zoom-modal');
+    const zoomImg = document.getElementById('zoom-img');
+
+    document.querySelectorAll('.ampliable').forEach(img => {
+      img.addEventListener('click', () => {
+        zoomImg.src = img.src;
+        zoomImg.alt = img.alt;
+        modal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+      });
+    });
+
+    zoomImg.addEventListener('click', () => {
+      modal.classList.add('hidden');
+      zoomImg.src = '';
+      document.body.classList.remove('overflow-hidden');
+    });
+
+    // Zoom texto
+    document.querySelectorAll('.ampliable-texto').forEach(texto => {
+      texto.addEventListener('click', () => {
+        texto.classList.toggle('scale-125');
+        texto.classList.toggle('font-extrabold');
+        texto.classList.toggle('text-purple-700');
+        texto.classList.toggle('transition');
+        texto.classList.toggle('duration-300');
+      });
+    });
+  </script>
+</Layout>
